@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Signup form</title>
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="container" class="container">
+        <!-- form section -->
+        <div class="row">
+            <!-- sign up -->
+            <section class="col align-items-center flex-col sign-up">
+                <div class="form-wrapper align-items-center">
+                    <form class="form sign-up">
+                        <div class="input-group">
+                            <i class="bx bxs-user"></i>
+                            <input type="text" placeholder="Username" />
+                        </div>
+                        <div class="input-group">
+                            <i class="bx bx-mail-send"></i>
+                            <input type="email" placeholder="Email" />
+                        </div>
+                        <div class="input-group">
+                            <i class="bx bxs-lock-alt"></i>
+                            <input type="password" placeholder="Password" />
+                        </div>
+                        <div class="input-group">
+                            <i class="bx bxs-lock-alt"></i>
+                            <input type="password" placeholder="Confirm password" />
+                        </div>
+                        <button>Sign up</button>
+                        <p>
+                            <span>Already have an account?</span>
+                            <b onclick="toggle()" class="pointer"> Sign in </b>
+                        </p>
+                    </form>
+                </div>
+            </section>
+            <!-- sign in -->
+            <section class="col align-items-center flex-col sign-in">
+                <div class="form-wrapper align-items-center">
+                    <form class="form sign-in">
+                        <div class="input-group">
+                            <i class="bx bxs-user"></i>
+                            <input type="text" placeholder="Username" />
+                        </div>
+                        <div class="input-group">
+                            <i class="bx bxs-lock-alt"></i>
+                            <input type="password" placeholder="Password" />
+                        </div>
+                        <button>Sign in</button>
+                        <p><b>Forgot password?</b></p>
+                        <p>
+                            <span>Don't have an account?</span>
+                            <b onclick="toggle()" class="pointer">Sign up</b>
+                        </p>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <!-- content section-->
+        <section class="row content-row">
+            <!-- sign in  -->
+            <div class="col align-items-center flex-col">
+                <div class="text sign-in">
+                    <h2>Welcome back</h2>
+                </div>
+                <div class="img sign-in">
+                    <img src="assets/undraw_step_to_the_sun_nxqq.svg" alt="welcome" />
+                </div>
+            </div>
+            <!-- sign up  -->
+            <div class="col align-items-center flex-col">
+                <div class="img sign-up">
+                    <img src="assets/undraw_icons_wdp4.svg" alt="welcome" />
+                </div>
+                <div class="text sign-up">
+                    <h2>Join us</h2>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
